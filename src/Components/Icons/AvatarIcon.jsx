@@ -1,7 +1,7 @@
 import { Avatar, ListItemAvatar } from "@mui/material";
 
-export default function AvatarIcon({ todo }) {
-  switch (todo.name) {
+export default function AvatarIcon({ user }) {
+  switch (user.name) {
     case "PLAY FOOTBALL":
       return (
         <ListItemAvatar>
