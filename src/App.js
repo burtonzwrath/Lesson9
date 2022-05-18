@@ -10,9 +10,9 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
-          <Route path={"/users"} element={<UsersContainer />} />
-          <Route path={"/users/create"} element={<Form />} />
-          <Route path={"/users/edit/:id"} element={<Form />} />
+          <Route path={"/"} element={<UsersContainer />} />
+          <Route path={"/create"} element={<Form />} />
+          <Route path={"/edit/:id"} element={<Form />} />
         </Routes>
       </BrowserRouter>
     </Provider>

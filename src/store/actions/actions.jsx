@@ -37,7 +37,9 @@ export const deleteUserThunk = (payload) => {
   return function (dispatch, getState) {
     const users = getState();
     const newUsers = users.users.filter((user) => user.id !== payload.id);
-    deleteUser(payload).then(dispatch(getNewUsers(newUsers)));
+    deleteUser(payload).then(()=>dispatch(getNewUsers(newUsers)))
+    dispatch(getNewUsers(newUsers))
+    ;
   };
 };
 
@@ -45,7 +47,7 @@ export const createUserThunk = (payload) => {
   return function (dispatch, getState) {
     const users = getState();
     const newUsers = [...users.users, payload];
-    createUsers(payload).then(dispatch(getNewUsers(newUsers)));
+    createUsers(payload).then(()=>dispatch(getNewUsers(newUsers)));
   };
 };
 
@@ -55,6 +57,6 @@ export const editUserThunk = (payload) => {
     const newUsers = users.users.filter((user) =>
       user.id === payload.id ? payload : user
     );
-    editUser(payload).then(dispatch(getNewUsers(newUsers)));
+    editUser(payload).then(()=>dispatch(getNewUsers(newUsers)));
   };
 };

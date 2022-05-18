@@ -20,11 +20,11 @@ export default function Form() {
     if (id === undefined) {
       dispatch(createUserThunk(newUser));
       dispatch(editNewUser({}));
-      navigate("/users");
+      navigate("/");
     } else {
       dispatch(editUserThunk(newUser));
       dispatch(editNewUser({}));
-      navigate("/users");
+      navigate("/");
     }
   };
   const buttonStyle = () => {

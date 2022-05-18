@@ -38,8 +38,9 @@ export default function UsersContainer() {
         onItemClick={onItemClick}
       />
       <Button
+        variant="outlined"
         onClick={onCreateButton}
-        sx={{ marginLeft: "300px", marginTop: "50px" ,  fontSize:"30px"}}
+        sx={{ marginLeft: "300px", marginTop: "50px",marginBottom:"30px", fontSize: "30px",backgroundColor:"lightseagreen", color:"white" }}
       >
         Create new user
       </Button>

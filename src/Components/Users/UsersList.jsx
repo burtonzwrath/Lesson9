@@ -17,11 +17,17 @@ export default function UsersList({
     <TableContainer>
       <Table sx={{ width: "800px", marginLeft: "50px", marginTop: "50px" }}>
         <TableHead>
-          <TableRow >
+          <TableRow>
             <TableCell> </TableCell>
-            <TableCell sx={{  fontSize:"30px"}}>NAME</TableCell>
-            <TableCell sx={{  fontSize:"30px"}}>SURNAME</TableCell>
-            <TableCell sx={{  fontSize:"30px"}}>PHONE</TableCell>
+            <TableCell sx={{ color: "dimgrey", fontSize: "30px" }}>
+              NAME
+            </TableCell>
+            <TableCell sx={{ color: "dimgrey", fontSize: "30px" }}>
+              SURNAME
+            </TableCell>
+            <TableCell sx={{ color: "dimgrey", fontSize: "30px" }}>
+              PHONE
+            </TableCell>
           </TableRow>
         </TableHead>
 
